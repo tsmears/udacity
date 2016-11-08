@@ -1,0 +1,47 @@
+
+
+/*Your styles go here!*/
+
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+ /*zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+
+/*I've left some boilerplate below for you.*/
+
+
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+body {
+
+}
+
+article {
+	width: 50em;
+}
+
+h1 {
+
+}
+
+img {
+	max-width: 100%;
+}
+
+
+

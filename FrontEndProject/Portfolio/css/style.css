@@ -1,0 +1,29 @@
+.container{
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+.title-super {
+	font-size: 60px;
+	font-family: 'Cormorant Garamond', serif;
+}
+
+
+.logo-super {
+	margin-top: 20px;
+	padding-top: 25px;
+}
+
+.portfolio_row{
+	margin-bottom: 30px;
+}
+
+/*catch all so all these are responsive*/
+img, embed, object, video {
+	max-width: 100%
+}
+
+
+.footer {
+	text-align: center;
+}
