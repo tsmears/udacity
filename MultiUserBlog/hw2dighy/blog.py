@@ -22,6 +22,12 @@ class BaseHandler(webapp2.RequestHandler):
     def write(self, *a, **kw):
         self.response.out.write(*a, **kw)
 
+
+class MainPage(BaseHandler):
+  def get(self):
+      self.write('Hello, Udacity!')
+
+
 class Rot13(BaseHandler):
     def get(self):
         self.render('rot13-form.html')
@@ -90,7 +96,16 @@ class Welcome(BaseHandler):
         else:
             self.redirect('/unit2/signup')
 
+
+
+
+
+class Test(webapp2.RequestHandler):
+    def get(self):
+        self.write("yo")
+
 app = webapp2.WSGIApplication([('/unit2/rot13', Rot13),
                                ('/unit2/signup', Signup),
+                               ('/unit2/test', Test),
                                ('/unit2/welcome', Welcome)],
                               debug=True)
